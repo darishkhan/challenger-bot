@@ -11,7 +11,7 @@ intents = discord.Intents.default()
 intents.message_content = True
 
 client = discord.Client(intents = intents)
-CONNECTION_STRING = "mongodb+srv://hacker:flag{404}@cluster0.abtw8.mongodb.net/?retryWrites=true&w=majority"
+CONNECTION_STRING = ""
 
 
 
@@ -126,4 +126,4 @@ async def on_message(message):
     else:
       await message.channel.send("No active challange!")
 
-client.run('MTEzNDgwNDA2ODYzNjgzMTc2NQ.GzJI5J.DbJfLL1yg7zNuj9jCmB5pmF2VubX11JfTKKK_k')
+client.run('')
