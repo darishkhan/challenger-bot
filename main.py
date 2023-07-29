@@ -9,7 +9,7 @@ from discord.ext import commands
 # import os
 # token = os.environ['TOKEN']
 
-TOKEN='MTA1NjIyMDAyMzMzMDQ0MzMxNA.GQKimB.aUGGfTuehg7A0o4gHlag0RVPW1aYaQUeovG-vA'
+TOKEN=''
 
 # client = discord.Client(intents=discord.Intents.default())
 bot = commands.Bot(command_prefix="!", intents=discord.Intents.all())
@@ -201,4 +201,4 @@ bot.run(TOKEN)
 #     else:
 #       await message.channel.send("No active challange!")
 
-# client.run('OTM3MzgwNTk1MDcwMjkyMDE4.Yfa5tQ.jfoXx6JHC23mbSc5p-ZAspqEQcU')
+# client.run('')
