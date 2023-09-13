@@ -1,15 +1,15 @@
 from pymongo import MongoClient
-CONNECTION_STRING = "mongodb+srv://hacker:flag{404}@cluster0.abtw8.mongodb.net/?retryWrites=true&w=majority"
+CONNECTION_STRING = ""
 import datetime
 
-def create_challange(req):
+def create_challenge(req):
     dbclient = MongoClient(CONNECTION_STRING)
     db = dbclient['CSec']
-    collection = db['challenge']
+    collection = db['Challenges']
     
     now = datetime.datetime.now()
-    challange = req
-    collection.insert_one(challange)
+    challenge = req
+    collection.insert_one(challenge)
     print("Challange created!")
         
 if __name__ == "__main__":
@@ -68,4 +68,4 @@ if __name__ == "__main__":
                 
         }
     }
-    create_challange(req)
+    create_challenge(req)
