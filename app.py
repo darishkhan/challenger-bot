@@ -82,7 +82,7 @@ async def on_message(message):
       question_code = l[1]
       res = collection.find_one({'status':'active'},{f"problems.{question_code}.flag" : 1 ,f"problems.{question_code}.score" : 1, f"problems.{question_code}.top-hackers": 1})
       if res == None:
-        await message.channel.send("Challange not found!")
+        await message.channel.send("Challenge not found!")
         return
       else:
         print(l)
@@ -168,7 +168,7 @@ async def on_message(message):
         '''
       await message.channel.send(s)
     else:
-      await message.channel.send("No active challange!")
+      await message.channel.send("No active challenge!")
 
 
 discord_token = ''
