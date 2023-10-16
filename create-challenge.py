@@ -10,7 +10,7 @@ def create_challenge(req):
     now = datetime.datetime.now()
     challenge = req
     collection.insert_one(challenge)
-    print("Challange created!")
+    print("Challenge created!")
         
 if __name__ == "__main__":
     now = datetime.datetime.now()
